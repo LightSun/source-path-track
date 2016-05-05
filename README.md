@@ -106,7 +106,7 @@ the 'ITrackRepeatProcessor' is the processor while we track a repeat node. if we
     TrackFactory.getDefaultTagTracker().track(getLevel(), getPageName());
    ```
    and if you want to carry extra data. please use the method 
-     ``` java
+     ```
      void track(int level, String tag, Object extra).
        ```
    'trackEvent()'  is similar. 
