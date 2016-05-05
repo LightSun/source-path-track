@@ -35,6 +35,7 @@ public  abstract class BaseTrackTestFragment extends BaseFragment{
                  onClickTag(v);
              }
          });
+
     }
 
     @Override
