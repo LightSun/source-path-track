@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+   <RadioGroup
+       android:id="@+id/rg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="bottom"
+       >
+
+       <RadioButton
+          android:id="@+id/rb_first_page"
+           style="@style/radio_button"
+           android:drawableTop="@mipmap/ic_launcher"
+           android:checked="false"
+           android:text="@string/tab_first_page"
+           />
+       <RadioButton
+          android:id="@+id/rb_chuzhen"
+           style="@style/radio_button"
+           android:drawableTop="@mipmap/ic_launcher"
+           android:checked="false"
+           android:text="@string/tab_chuzhen_page"
+           />
+       <RadioButton
+          android:id="@+id/rb_circle"
+           style="@style/radio_button"
+           android:drawableTop="@mipmap/ic_launcher"
+           android:checked="false"
+           android:text="@string/tab_circle"
+           />
+       <RadioButton
+          android:id="@+id/rb_msg"
+           style="@style/radio_button"
+           android:drawableTop="@mipmap/ic_launcher"
+           android:checked="false"
+           android:text="@string/tab_message"
+           />
+
+   </RadioGroup>
+
+</FrameLayout>

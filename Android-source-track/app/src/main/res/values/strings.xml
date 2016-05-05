@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android-source-track</string>
+
+    <string name="tab_first_page">tab_首页</string>
+    <string name="tab_chuzhen_page">tab_出诊</string>
+    <string name="tab_circle">tab_圈子</string>
+    <string name="tab_message">tab_消息</string>
+    <string name="tab_mine">tab_我的</string>
+
+    <string name="dynamic">动态</string>
+    <string name="case_lib">病例库</string>
+    <string name="video">视频</string>
+    <string name="info">资讯</string>
+</resources>
