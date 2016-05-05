@@ -90,7 +90,7 @@ public final class TagTracker extends AbstractPathTracker implements ITrackManag
 	 * @param event is event
      */
 	private synchronized void trackInternal(TagNode node,boolean event){
-		if(mNodes.contains(node)){
+		if(getTrackJudge().contains(mNodes, node )){
 			if(getTrackRepeatProcessor() == null || !getTrackRepeatProcessor().process(this,node)){
 				System.err.println("the node already exists. " + node);
 			}
