@@ -105,8 +105,11 @@ the 'ITrackRepeatProcessor' is the processor while we track a repeat node. if we
    ``` java
     TrackFactory.getDefaultTagTracker().track(getLevel(), getPageName());
    ```
-   and if you want to carry extra data. please use the method void track(int level, String tag, Object extra).
-   trackEvent use is similar. 
+   and if you want to carry extra data. please use the method 
+     ``` java
+     void track(int level, String tag, Object extra).
+       ```
+   'trackEvent()'  is similar. 
    - the difference between 'track()' and 'trackEvent()' ?
      'track()' ->
                  indicate the node will be add to the end of the track stack. 
