@@ -111,10 +111,10 @@ the 'ITrackRepeatProcessor' is the processor while we track a repeat node. if we
        ```
    'trackEvent()'  is similar. 
    - the difference between 'track()' and 'trackEvent()' ?
-     'track()' ->
-                 indicate the node will be add to the end of the track stack. 
-     'trackEvent()'  ->
-                 indicate the node will only use once .and will not add to the track stack. 
+     - 'track()' ->
+               - indicate the node will be add to the end of the track stack. 
+     - 'trackEvent()'  ->
+               - indicate the node will only use once .and will not add to the track stack. 
  
 
 ## License
