@@ -10,12 +10,12 @@ this is a lib of source path track. eg : if you want yo track A->B->C or A-B->An
 
 ## design idea or structure
 
-path have multi nodes and some rules. so i declare a class named 'CareAction'. 
-That is a 'CareAction' indicate a path that we want to track. And the class contains some nodes. the class 'TagNode' is it. 
-And the 'ITrackManager' is the manager to manage the track behaviour.  
-the 'ITrackJudge'  decide hao wo do with the old node due to the new node.
-the 'IReportCallback'  is the callback while the CareAction occoured.
-the 'ITrackRepeatProcessor' is the processor while we track a repeat node. if we not set there is no effect.
+- path have multi nodes and some rules. so i declare a class named 'CareAction'. That means a 'CareAction' indicate 
+  a path that we want to track. And the class contains some nodes. the class 'TagNode' is it. 
+- And the 'ITrackManager' is the manager to manage the track behaviour.  
+- the 'ITrackJudge'  decide hao wo do with the old node due to the new node.
+- the 'IReportCallback'  is the callback while the CareAction occoured.
+- the 'ITrackRepeatProcessor' is the processor while we track a repeat node. if we not set there is no effect.
 
 <img src="/imgs/uml_class.png" alt="Demo Screen Capture" width="659px" height="486px"/>
 
