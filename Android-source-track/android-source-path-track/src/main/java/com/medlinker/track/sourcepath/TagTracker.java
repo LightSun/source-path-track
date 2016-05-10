@@ -134,16 +134,18 @@ public final class TagTracker extends AbstractPathTracker implements ITrackManag
 
 				case CareAction.MODE_FULL :
 				case CareAction.MODE_END : {
+					int nodeSize = action.mNodes.size();//4    7   7-4
 					tmp = action.mNodes.get(0);
 					index = -1;
-					for(int i = 0,size = mNodes.size(); i<size ;i++){
+					//resolve d-> b-> C -> d -> b
+					for(int size = mNodes.size(),i = size - nodeSize; i >= 0 ; i--){
 						if(nodeComparetor.equals(mNodes.get(i),tmp)){
 							index = i;
 							break;
 						}
 					}
 					if (index == -1) {
-						continue;
+						break;
 					}
 					if (isFullList(mNodes.subList(index, mNodes.size()), action.mNodes, nodeComparetor)) {
 						dispatchCallbackonCareActionOccoured(mTempNodes,action, addToReportList, false);
